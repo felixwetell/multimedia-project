@@ -22,16 +22,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Startsida<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html"><img src="img/home.svg" class="logo-nav"> Startsida</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="video.html">Video</a>
+                <a class="nav-link" href="video.html"><img src="img/video.svg" class="logo-nav"> Video</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="canvas.html">Canvas</a>
+                <a class="nav-link" href="canvas.html"><img src="img/canvas.svg" class="logo-nav"> Canvas</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="svg.html">SVG</a>
+                <a class="nav-link" href="svg.html"><img src="img/svg.svg" class="logo-nav"> SVG<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
@@ -42,7 +42,7 @@
 <div class="container-fluid text-center">
     <h3 class="display-3">SVG</h3>
 
-    <div id="svg-holder">
+    <div id="svg-holder" class="mb-5">
         <svg id="animate" class="d-inline-block align-top" width="238px" height="324px" viewBox="0 0 238 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
             <title>spaceship</title>
@@ -71,6 +71,29 @@
                 </g>
             </g>
         </svg>
+    </div>
+    <div class="jumbotron mt-5">
+        <h5 class="display-4">Quantity of rockets</h5>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" id="rocketDiagram">
+            <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="2" refY="2" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,4 L4,2 z" fill="inherit" />
+                </marker>
+            </defs>
+            <rect x="40" y="100" width="80" fill="red" id="red" />
+            <rect x="140" y="50" width="80" fill="dodgerblue" id="blue" />
+            <rect x="240" y="150" width="80" fill="grey" id="grey" />
+            <line x1="0" y1="300" x2="400" y2="300" fill="none" stroke="black" stroke-width="4" stroke-linecap="square" />
+            <line x1="0" y1="300" x2="0" y2="0" stroke="black" stroke-width="4" stroke-linecap="square" />
+        </svg>
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 30" width="400" height="30">
+            <text x="65" y="20">2016</text>
+            <text x="165" y="20">2017</text>
+            <text x="260" y="20">2018</text>
+        </svg>
+        <br>
+        <a class="btn btn-primary text-white" id="diagramButton">Click to show diagram data</a>
     </div>
 </div>
 
